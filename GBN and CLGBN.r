@@ -1,6 +1,6 @@
 # Gaussian BN 
 
-gaussian = read.csv('/Users/jamie/Desktop/Diss Resources/Jamie/Gaussian_data.csv',header=T)
+gaussian = read.csv('.../Gaussian_data.csv',header=T)
 
 # colnames(gaussian) = c('x1','x2','x3','x4','x5','x6','x7','x8')
 
@@ -57,7 +57,7 @@ graphviz.plot(pdag3,shape='ellipse')
 
 ## Hybrid Bayesian Network with discharge discretised
 
-clgaussian = read.csv('/Users/jamie/Desktop/Diss Resources/Jamie/HybridData.csv',header=T)
+clgaussian = read.csv('.../HybridData.csv',header=T)
 dag = hc(clgaussian)
 fit = bn.fit(dag,clgaussian)
 fit 
