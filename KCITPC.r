@@ -6,7 +6,7 @@ Data = read.csv(".../Updated_Data.csv",header=F)
 # Produce random subsample 
 
 randsample = sample(1:nrow(Data),400,replace = T)
-data = uniformData[randsample,]
+data = Data[randsample,]
 
 # Initialise Adjacency Matrix
 
